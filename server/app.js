@@ -31,7 +31,7 @@ app.use(cors({
 }));
 app.use(redirector.middleware);
 app.use(jsonp);
-app.use(express.static(`${__dirname}/..`));
+app.use(express.static("${__dirname}/.."));
 app.use('/', router);
 
 
